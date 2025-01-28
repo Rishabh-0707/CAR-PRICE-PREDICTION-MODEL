@@ -13,19 +13,23 @@ The goal of this project is to create a machine learning model that can predict 
 
 The model uses **Gradient Boosting Regressor** from the `sklearn` library to make predictions. Preprocessing is done using `StandardScaler` for numerical features and `OneHotEncoder` for categorical features.
 
-Model Evaluation
-The model is evaluated using Mean Squared Error (MSE) and Root Mean Squared Error (RMSE).
-The scatter plot visualizes how well the model's predictions align with the actual prices.
-
 
 Results
 Root Mean Squared Error (RMSE): The model's performance is evaluated using RMSE. The lower the RMSE, the better the model's predictions.
 Visualization: A scatter plot comparing actual vs. predicted car prices is displayed.
 
+Model Evaluation
+The model is evaluated using Mean Squared Error (MSE) and Root Mean Squared Error (RMSE).
+The scatter plot visualizes how well the model's predictions align with the actual prices.
+
+File Descriptions
+car_price_prediction.py: Main script that handles data loading, preprocessing, model training, and evaluation.
+car_price_prediction_model.pkl: The trained model saved using joblib.
+car_data.csv: Synthetic dataset used for training and testing (or you can replace it with an actual dataset).
 
 Requirements-
 
-- Python 3.x
+- Python 3.xResults
 - `pandas`
 - `numpy`
 - `matplotlib`
@@ -36,12 +40,6 @@ You can install the necessary dependencies using the following command:
 
 ```bash
 pip install -r requirements.txt
-
-pandas
-numpy
-matplotlib
-scikit-learn
-joblib
 
 
 
